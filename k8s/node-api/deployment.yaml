@@ -16,6 +16,7 @@ spec:
       containers:
         - name: node-api
           image: josephmj0303/emart-node-api:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000
 
