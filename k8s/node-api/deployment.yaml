@@ -12,11 +12,27 @@ spec:
       labels:
         app: node-api
     spec:
+      restartPolicy: Always
       containers:
         - name: node-api
           image: josephmj0303/emart-node-api:latest
           ports:
             - containerPort: 5000
+
           env:
             - name: MONGO_URL
               value: mongodb://mongo:27017/emart
+
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 5000
+            initialDelaySeconds: 10
+            periodSeconds: 5
+
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 5000
+            initialDelaySeconds: 20
+            periodSeconds: 10
