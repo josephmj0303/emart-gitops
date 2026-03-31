@@ -21,7 +21,7 @@ spec:
 
           env:
             - name: MONGO_URL
-              value: mongodb://mongo:27017/emart
+              value: mongodb://mongo:27017/epoc
 
           readinessProbe:
             httpGet:
