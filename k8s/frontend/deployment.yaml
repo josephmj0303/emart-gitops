@@ -14,6 +14,24 @@ spec:
     spec:
       containers:
         - name: frontend
+<<<<<<< HEAD
           image: josephmj0303/emart-frontend:6293e0b
+=======
+          image: josephmj0303/emart-frontend:PLACEHOLDER
+          imagePullPolicy: Always
+>>>>>>> fc0dc3c (app deployment fix)
           ports:
             - containerPort: 80
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 5
+
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 10
+            periodSeconds: 10

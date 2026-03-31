@@ -14,7 +14,12 @@ spec:
     spec:
       containers:
         - name: java-api
+<<<<<<< HEAD
           image: josephmj0303/emart-java-api:6293e0b
+=======
+          image: josephmj0303/emart-java-api:PLACEHOLDER
+          imagePullPolicy: Always
+>>>>>>> fc0dc3c (app deployment fix)
           ports:
             - containerPort: 9000
           env:
@@ -24,3 +29,16 @@ spec:
               value: root
             - name: SPRING_DATASOURCE_PASSWORD
               value: rootpass
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 9000
+            initialDelaySeconds: 15
+            periodSeconds: 5
+
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 9000
+            initialDelaySeconds: 30
+            periodSeconds: 10
