@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: java-api
-          image: josephmj0303/emart-java-api:latest
+          image: josephmj0303/emart-java-api:6293e0b
           ports:
             - containerPort: 9000
           env:

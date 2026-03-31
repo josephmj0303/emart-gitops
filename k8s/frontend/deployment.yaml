@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: josephmj0303/emart-frontend:latest
+          image: josephmj0303/emart-frontend:6293e0b
           ports:
             - containerPort: 80
