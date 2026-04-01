@@ -14,12 +14,8 @@ spec:
     spec:
       containers:
         - name: java-api
-<<<<<<< HEAD
           image: josephmj0303/emart-java-api:6293e0b
-=======
-          image: josephmj0303/emart-java-api:PLACEHOLDER
           imagePullPolicy: Always
->>>>>>> fc0dc3c (app deployment fix)
           ports:
             - containerPort: 9000
           env:

@@ -15,11 +15,7 @@ spec:
       restartPolicy: Always
       containers:
         - name: node-api
-<<<<<<< HEAD
           image: josephmj0303/emart-node-api:6293e0b
-=======
-          image: josephmj0303/emart-node-api:PLACEHOLDER
->>>>>>> fc0dc3c (app deployment fix)
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
