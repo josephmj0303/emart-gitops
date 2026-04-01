@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: josephmj0303/emart-frontend:4bf4c24
+          image: josephmj0303/emart-frontend:e11ab7b
           imagePullPolicy: Always
           ports:
             - containerPort: 80

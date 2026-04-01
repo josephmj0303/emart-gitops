@@ -15,7 +15,7 @@ spec:
       restartPolicy: Always
       containers:
         - name: node-api
-          image: josephmj0303/emart-node-api:4bf4c24
+          image: josephmj0303/emart-node-api:e11ab7b
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
