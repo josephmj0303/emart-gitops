@@ -15,6 +15,6 @@ stringData:
     receivers:
       - name: slack-notifications
         slack_configs:
-          - api_url: https://hooks.slack.com/services/XXX   # replace
+          - api_url: http://alertmanager-slack-webhook.monitoring.svc.cluster.local/webhook
             channel: "#alerts"
             send_resolved: true

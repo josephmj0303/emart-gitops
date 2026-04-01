@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: slack-proxy-config
+  namespace: monitoring
+data:
+  server.js: |
+    const http = require('http');
+    const https = require('https');
+
+    const webhook = process.env.WEBHOOK_URL;
+
+    const server = http.createServer((req, res) => {
+      let body = '';
+      req.on('data', chunk => body += chunk);
+      req.on('end', () => {
+        const request = https.request(webhook, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' }
+        });
+        request.write(body);
+        request.end();
+        res.end('ok');
+      });
+    });
+
+    server.listen(8080);

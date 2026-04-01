@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: slack-proxy
+  namespace: monitoring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: slack-proxy
+  template:
+    metadata:
+      labels:
+        app: slack-proxy
+    spec:
+      containers:
+        - name: slack-proxy
+          image: node:18-alpine
+          command: ["node", "/app/server.js"]
+          env:
+            - name: WEBHOOK_URL
+              valueFrom:
+                secretKeyRef:
+                  name: slack-webhook-url
+                  key: webhook-url
+          volumeMounts:
+            - name: config
+              mountPath: /app
+      volumes:
+        - name: config
+          configMap:
+            name: slack-proxy-config
