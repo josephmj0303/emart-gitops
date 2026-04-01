@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: java-api
-          image: josephmj0303/emart-java-api:3a05034
+          image: josephmj0303/emart-java-api:a5237d2
           imagePullPolicy: Always
           ports:
             - containerPort: 9000
