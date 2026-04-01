@@ -5,7 +5,8 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-    - http:
+    - host: joedevopslab.xyz
+      http:
         paths:
           - path: /
             pathType: Prefix
@@ -15,7 +16,7 @@ spec:
                 port:
                   number: 80
 
-          - path: /api
+          - path: /api/
             pathType: Prefix
             backend:
               service:
@@ -23,7 +24,7 @@ spec:
                 port:
                   number: 5000
 
-          - path: /webapi
+          - path: /webapi/
             pathType: Prefix
             backend:
               service:
