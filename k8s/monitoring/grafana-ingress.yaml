@@ -6,10 +6,10 @@ metadata:
 spec:
   ingressClassName: traefik
   rules:
-    - host: joedevopslab.xyz
+    - host: grafana.joedevopslab.xyz
       http:
         paths:
-          - path: /grafana
+          - path: /
             pathType: Prefix
             backend:
               service:
