@@ -13,6 +13,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: monitoring-prometheus
+                name: prometheus-operated
                 port:
-                  number: 80
+                  number: 9090
