@@ -24,6 +24,14 @@ spec:
                 port:
                   number: 5000
 
+          - path: /metrics
+            pathType: Prefix
+            backend:
+              service:
+                name: node-api
+                port:
+                  number: 5000
+
           - path: /webapi/
             pathType: Prefix
             backend:
