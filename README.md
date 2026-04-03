@@ -1,4 +1,10 @@
 # 🔄 Emart GitOps Repository
+![GitOps](https://img.shields.io/badge/Model-GitOps-green?style=for-the-badge)
+![ArgoCD](https://img.shields.io/badge/CD-ArgoCD-orange?logo=argo&style=for-the-badge)
+![Kubernetes](https://img.shields.io/badge/Platform-Kubernetes-blue?logo=kubernetes&style=for-the-badge)
+![IaC](https://img.shields.io/badge/IaC-Kubernetes%20YAML-blueviolet?style=for-the-badge)
+![Monitoring](https://img.shields.io/badge/Observability-Prometheus%20%7C%20Grafana-red?style=for-the-badge)
+![License](https://img.shields.io/github/license/josephmj0303/emart-gitops?style=for-the-badge)
 
 This repository contains **Kubernetes manifests** for deploying the Emart application using a **GitOps workflow with ArgoCD**.
 
