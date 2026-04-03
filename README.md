@@ -22,6 +22,32 @@ GitHub Actions (CI) → Updates this repo → ArgoCD syncs → Kubernetes update
 
 ---
 
+## 🔗 Application Source Repository
+
+This repository is part of a larger DevOps system.
+
+👉 Application source code, CI pipeline, and Docker builds are handled in:
+
+➡️ https://github.com/josephmj0303/emart-devops-platform
+
+---
+
+### 🔁 GitOps Flow
+
+```text
+Application Repo (CI Pipeline)
+        ↓
+Docker Images Built & Pushed
+        ↓
+This GitOps Repo Updated
+        ↓
+ArgoCD Detects Change
+        ↓
+Kubernetes Cluster Updated
+```
+
+---
+
 ## 📁 Repository Structure
 
 ```
