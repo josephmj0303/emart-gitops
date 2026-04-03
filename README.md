@@ -7,7 +7,10 @@
 ![License](https://img.shields.io/github/license/josephmj0303/emart-gitops?style=for-the-badge)
 
 This repository contains **Kubernetes manifests** for deploying the Emart application using a **GitOps workflow with ArgoCD**.
+## 📦 Project Components
 
+- 🚀 App + CI Pipeline: https://github.com/josephmj0303/emart-devops-platform  
+- 🔄 GitOps + Kubernetes: https://github.com/josephmj0303/emart-gitops  
 ---
 
 ## 🧠 Purpose
