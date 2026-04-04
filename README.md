@@ -91,6 +91,7 @@ Kubernetes Cluster Updated
 │           ├── service.yaml
 │           └── slack-proxy.yaml
 ├── LICENSE
+├── .gitignore
 └── README.md
 ```
 
@@ -110,6 +111,19 @@ Kubernetes Cluster Updated
 
 * MongoDB (for Node API)
 * MySQL (for Java API)
+
+### ☸️ Kubernetes Cluster
+
+All services are deployed and running successfully in the cluster.
+
+![Kubernetes Pods](docs/screenshots/k8s-cluster.png)
+
+### Components:
+- Frontend
+- Node API
+- Java API
+- MongoDB
+- MySQL
 
 ---
 
@@ -162,6 +176,16 @@ image: yourname/emart-node-api:abc1234
 * Self Heal: Enabled
 * Prune: Enabled
 
+### 🚀 GitOps Deployment (ArgoCD)
+
+ArgoCD continuously monitors the Git repository and syncs changes automatically.
+
+![ArgoCD Dashboard](docs/screenshots/argocd.png)
+
+### Status:
+- Application: Synced
+- Health: Healthy
+
 ---
 
 ## 🌐 Ingress Configuration
@@ -198,6 +222,18 @@ Planned:
 * Grafana
 * Alertmanager
 
+### 📊 Grafana Dashboard
+
+Real-time monitoring of application and cluster metrics.
+
+![Grafana Dashboard](docs/screenshots/grafana.png)
+
+### 🔍 Prometheus Targets
+
+All services are successfully scraped and monitored.
+
+![Prometheus Targets](docs/screenshots/prometheus.png)
+
 ---
 
 ## 🚨 Alerts
@@ -213,7 +249,19 @@ Slack integration available via:
 ```
 observability-addons/slack/
 ```
+### 🚨 Alerting (Slack Integration)
 
+Critical alerts are sent to Slack using Alertmanager.
+
+![Slack Alerts](docs/screenshots/alerts.png)
+---
+
+## 📸 Screenshots
+
+See relevant screenshots under:
+```
+docs/screenshots/
+```
 ---
 
 ## 🧠 Design Principles
