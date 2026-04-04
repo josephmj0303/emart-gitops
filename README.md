@@ -54,16 +54,44 @@ Kubernetes Cluster Updated
 ## 📁 Repository Structure
 
 ```
-k8s/
-├── frontend/
-├── node-api/
-├── java-api/
-├── databases/
-│   ├── mongo/
-│   └── mysql/
-├── ingress/
-├── monitoring/
-└── observability-addons/
+.
+├── docs
+│   └── screenshots
+│       ├── alerts.png
+│       ├── argocd.png
+│       ├── grafana.png
+│       ├── k8s-cluster.png
+│       └── prometheus.png
+├── k8s
+│   ├── databases
+│   │   ├── mongo
+│   │   │   ├── deployment.yaml
+│   │   │   └── service.yaml
+│   │   └── mysql
+│   │       ├── deployment.yaml
+│   │       └── service.yaml
+│   ├── frontend
+│   │   ├── deployment.yaml
+│   │   └── service.yaml
+│   ├── ingress
+│   │   └── emart-ingress.yaml
+│   ├── java-api
+│   │   ├── deployment.yaml
+│   │   └── service.yaml
+│   ├── monitoring
+│   │   ├── alertmanager-config.yaml
+│   │   ├── grafana-ingress.yaml
+│   │   └── prometheus-ingress.yaml
+│   ├── node-api
+│   │   ├── deployment.yaml
+│   │   └── service.yaml
+│   └── observability-addons
+│       └── slack
+│           ├── deployment.yaml
+│           ├── service.yaml
+│           └── slack-proxy.yaml
+├── LICENSE
+└── README.md
 ```
 
 ---
@@ -206,6 +234,7 @@ observability-addons/slack/
 
 ---
 
-## 📜 License
+# 👨‍💻 Author
 
-MIT License
+**DevOps Engineer Portfolio Project**
+- AWS | CI/CD | Docker | Kubernetes | Security | Monitoring | Cloud Infrastructure
