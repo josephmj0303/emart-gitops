@@ -31,3 +31,4 @@ spec:
               port: 80
             initialDelaySeconds: 10
             periodSeconds: 10
+# add readiness and liveness probes

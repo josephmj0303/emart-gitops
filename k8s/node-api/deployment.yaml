@@ -37,3 +37,4 @@ spec:
               port: 5000
             initialDelaySeconds: 20
             periodSeconds: 10
+# add readiness and liveness probes
