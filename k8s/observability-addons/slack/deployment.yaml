@@ -30,3 +30,5 @@ spec:
         - name: config
           configMap:
             name: slack-proxy-config
+
+@ Updated deployment to route alerts via internal proxy
